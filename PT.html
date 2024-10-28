@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <link href="../css/PT.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="table-container">
+        <h1 class="table-title">Periodic Table of Elements</h1>
+    <div class="periodic-table">
+
+        <!-- 1st Row (H and He) -->
+        <div class="element" data-symbol="H">
+            <div class="number">1</div>
+            <div class="symbol">H</div>
+        </div>
+        <div class="empty-cell" style="grid-column: span 16;"></div> <!-- Skip to Helium -->
+        <div class="element" data-symbol="He">
+            <div class="number">2</div>
+            <div class="symbol">He</div>
+        </div>
+
+        <!-- 2nd Row (Li to Ne) -->
+        <div class="element" data-symbol="Li">
+            <div class="number">3</div>
+            <div class="symbol">Li</div>
+        </div>
+        <div class="element" data-symbol="Be">
+            <div class="number">4</div>
+            <div class="symbol">Be</div>
+        </div>
+        <div class="empty-cell" style="grid-column: span 10;"></div> <!-- Skip to Boron -->
+        <div class="element" data-symbol="B">
+            <div class="number">5</div>
+            <div class="symbol">B</div>
+        </div>
+        <div class="element" data-symbol="C">
+            <div class="number">6</div>
+            <div class="symbol">C</div>
+        </div>
+        <div class="element" data-symbol="N">
+            <div class="number">7</div>
+            <div class="symbol">N</div>
+        </div>
+        <div class="element" data-symbol="O">
+            <div class="number">8</div>
+            <div class="symbol">O</div>
+        </div>
+        <div class="element" data-symbol="F">
+            <div class="number">9</div>
+            <div class="symbol">F</div>
+        </div>
+        <div class="element" data-symbol="Ne">
+            <div class="number">10</div>
+            <div class="symbol">Ne</div>
+        </div>
+
+        <!-- 3rd Row (Na to Ar) -->
+        <div class="element" data-symbol="Na">
+            <div class="number">11</div>
+            <div class="symbol">Na</div>
+        </div>
+        <div class="element" data-symbol="Mg">
+            <div class="number">12</div>
+            <div class="symbol">Mg</div>
+        </div>
+        <div class="empty-cell" style="grid-column: span 10;"></div> <!-- Skip to Al -->
+        <div class="element" data-symbol="Al">
+            <div class="number">13</div>
+            <div class="symbol">Al</div>
+        </div>
+        <div class="element" data-symbol="Si">
+            <div class="number">14</div>
+            <div class="symbol">Si</div>
+        </div>
+        <div class="element" data-symbol="P">
+            <div class="number">15</div>
+            <div class="symbol">P</div>
+        </div>
+        <div class="element" data-symbol="S">
+            <div class="number">16</div>
+            <div class="symbol">S</div>
+        </div>
+        <div class="element" data-symbol="Cl">
+            <div class="number">17</div>
+            <div class="symbol">Cl</div>
+        </div>
+        <div class="element" data-symbol="Ar">
+            <div class="number">18</div>
+            <div class="symbol">Ar</div>
+        </div>
+
+        <!-- 4th Row -->
+        <div class="element" data-symbol="K">
+            <div class="number">19</div>
+            <div class="symbol">K</div>
+        </div>
+        <div class="element" data-symbol="Ca">
+            <div class="number">20</div>
+            <div class="symbol">Ca</div>
+        </div>
+        <div class="element" data-symbol="Sc">
+            <div class="number">21</div>
+            <div class="symbol">Sc</div>
+        </div>
+        <div class="element" data-symbol="Ti">
+            <div class="number">22</div>
+            <div class="symbol">Ti</div>
+        </div>
+        <div class="element" data-symbol="V">
+            <div class="number">23</div>
+            <div class="symbol">V</div>
+        </div>
+        <div class="element" data-symbol="Cr">
+            <div class="number">24</div>
+            <div class="symbol">Cr</div>
+        </div>
+        <div class="element" data-symbol="Mn">
+            <div class="number">25</div>
+            <div class="symbol">Mn</div>
+        </div>
+        <div class="element" data-symbol="Fe">
+            <div class="number">26</div>
+            <div class="symbol">Fe</div>
+        </div>
+        <div class="element" data-symbol="Co">
+            <div class="number">27</div>
+            <div class="symbol">Co</div>
+        </div>
+        <div class="element" data-symbol="Ni">
+            <div class="number">28</div>
+            <div class="symbol">Ni</div>
+        </div>
+        <div class="element" data-symbol="Cu">
+            <div class="number">29</div>
+            <div class="symbol">Cu</div>
+        </div>
+        <div class="element" data-symbol="Zn">
+            <div class="number">30</div>
+            <div class="symbol">Zn</div>
+        </div>
+        <div class="element" data-symbol="Ga">
+            <div class="number">31</div>
+            <div class="symbol">Ga</div>
+        </div>
+        <div class="element" data-symbol="Ge">
+            <div class="number">32</div>
+            <div class="symbol">Ge</div>
+        </div>
+        <div class="element" data-symbol="As">
+            <div class="number">33</div>
+            <div class="symbol">As</div>
+        </div>
+        <div class="element" data-symbol="Se">
+            <div class="number">34</div>
+            <div class="symbol">Se</div>
+        </div>
+        <div class="element" data-symbol="Br">
+            <div class="number">35</div>
+            <div class="symbol">Br</div>
+        </div>
+        <div class="element" data-symbol="Kr">
+            <div class="number">36</div>
+            <div class="symbol">Kr</div>
+        </div>
+
+        <!-- 5th Row -->
+        <div class="element" data-symbol="Rb">
+            <div class="number">37</div>
+            <div class="symbol">Rb</div>
+        </div>
+        <div class="element" data-symbol="Sr">
+            <div class="number">38</div>
+            <div class="symbol">Sr</div>
+        </div>
+        <div class="element" data-symbol="Y">
+            <div class="number">39</div>
+            <div class="symbol">Y</div>
+        </div>
+        <div class="element" data-symbol="Zr">
+            <div class="number">40</div>
+            <div class="symbol">Zr</div>
+        </div>
+        <div class="element" data-symbol="Nb">
+            <div class="number">41</div>
+            <div class="symbol">Nb</div>
+        </div>
+        <div class="element" data-symbol="Mo">
+            <div class="number">42</div>
+            <div class="symbol">Mo</div>
+        </div>
+        <div class="element" data-symbol="Tc">
+            <div class="number">43</div>
+            <div class="symbol">Tc</div>
+        </div>
+        <div class="element" data-symbol="Ru">
+            <div class="number">44</div>
+            <div class="symbol">Ru</div>
+        </div>
+        <div class="element" data-symbol="Rh">
+            <div class="number">45</div>
+            <div class="symbol">Rh</div>
+        </div>
+        <div class="element" data-symbol="Pd">
+            <div class="number">46</div>
+            <div class="symbol">Pd</div>
+        </div>
+        <div class="element" data-symbol="Ag">
+            <div class="number">47</div>
+            <div class="symbol">Ag</div>
+        </div>
+        <div class="element" data-symbol="Cd">
+            <div class="number">48</div>
+            <div class="symbol">Cd</div>
+        </div>
+        <div class="element" data-symbol="In">
+            <div class="number">49</div>
+            <div class="symbol">In</div>
+        </div>
+        <div class="element" data-symbol="Sn">
+            <div class="number">50</div>
+            <div class="symbol">Sn</div>
+        </div>
+        <div class="element" data-symbol="Sb">
+            <div class="number">51</div>
+            <div class="symbol">Sb</div>
+        </div>
+        <div class="element" data-symbol="Te">
+            <div class="number">52</div>
+            <div class="symbol">Te</div>
+        </div>
+        <div class="element" data-symbol="I">
+            <div class="number">53</div>
+            <div class="symbol">I</div>
+        </div>
+        <div class="element" data-symbol="Xe">
+            <div class="number">54</div>
+            <div class="symbol">Xe</div>
+        </div>
+
+        <div class="element" data-symbol="Cs">
+            <div class="number">55</div>
+            <div class="symbol">Cs</div>
+        </div>
+        <div class="element" data-symbol="Ba">
+            <div class="number">56</div>
+            <div class="symbol">Ba</div>
+        </div>
+
+        <div class="element" data-symbol="La">
+            <div class="number">57</div>
+            <div class="symbol">La</div>
+        </div>
+
+        <div class="element" data-symbol="Hf">
+            <div class="number">72</div>
+            <div class="symbol">Hf</div>
+        </div>
+        <div class="element" data-symbol="Ta">
+            <div class="number">73</div>
+            <div class="symbol">Ta</div>
+        </div>
+
+        <div class="element" data-symbol="W">
+            <div class="number">74</div>
+            <div class="symbol">W</div>
+        </div>
+        <div class="element" data-symbol="Re">
+            <div class="number">75</div>
+            <div class="symbol">Re</div>
+        </div>
+
+        <div class="element" data-symbol="Os">
+            <div class="number">76</div>
+            <div class="symbol">Os</div>
+        </div>
+
+        <div class="element" data-symbol="Ir">
+            <div class="number">77</div>
+            <div class="symbol">Ir</div>
+        </div>
+        <div class="element" data-symbol="Pt">
+            <div class="number">78</div>
+            <div class="symbol">Pt</div>
+        </div>
+        <div class="element" data-symbol="Au">
+            <div class="number">79</div>
+            <div class="symbol">Au</div>
+        </div>
+
+        <div class="element" data-symbol="Hg">
+            <div class="number">80</div>
+            <div class="symbol">Hg</div>
+        </div>
+        <div class="element" data-symbol="TI">
+            <div class="number">81</div>
+            <div class="symbol">TI</div>
+        </div>
+
+        <div class="element" data-symbol="Pb">
+            <div class="number">82</div>
+            <div class="symbol">Pb</div>
+        </div>
+        <div class="element" data-symbol="Bi">
+            <div class="number">83</div>
+            <div class="symbol">Bi</div>
+        </div>
+        <div class="element" data-symbol="Po">
+            <div class="number">84</div>
+            <div class="symbol">Po</div>
+        </div>
+
+        <div class="element" data-symbol="At">
+            <div class="number">85</div>
+            <div class="symbol">At</div>
+        </div>
+        <div class="element" data-symbol="Rn">
+            <div class="number">86</div>
+            <div class="symbol">Rn</div>
+        </div>
+
+        <div class="element" data-symbol="Fr">
+            <div class="number">87</div>
+            <div class="symbol">Fr</div>
+        </div>
+        <div class="element" data-symbol="Ra">
+            <div class="number">88</div>
+            <div class="symbol">Ra</div>
+        </div>
+
+        <div class="element" data-symbol="Ac">
+            <div class="number">89</div>
+            <div class="symbol">Ac</div>
+        </div>
+
+        <div class="element"  data-symbol="Rf">
+            <div class="number">104</div>
+            <div class="symbol">Rf</div>
+        </div>
+        <div class="element" data-symbol="Db">
+            <div class="number">105</div>
+            <div class="symbol">Db</div>
+        </div>
+
+        <div class="element" data-symbol="Sg">
+            <div class="number">106</div>
+            <div class="symbol">Sg</div>
+        </div>
+        <div class="element" data-symbol="Bh">
+            <div class="number">107</div>
+            <div class="symbol">Bh</div>
+        </div>
+
+        <div class="element" data-symbol="Hs">
+            <div class="number">108</div>
+            <div class="symbol">Hs</div>
+        </div>
+
+        <div class="element" data-symbol="Mt">
+            <div class="number">109</div>
+            <div class="symbol">Mt</div>
+        </div>
+        <div class="element" data-symbol="Ds">
+            <div class="number">110</div>
+            <div class="symbol">Ds</div>
+        </div>
+        <div class="element" data-symbol="Rg">
+            <div class="number">111</div>
+            <div class="symbol">Rg</div>
+        </div>
+
+        <div class="element" data-symbol="Cn">
+            <div class="number">112</div>
+            <div class="symbol">Cn</div>
+        </div>
+        <div class="element" data-symbol="Nh">
+            <div class="number">113</div>
+            <div class="symbol">Nh</div>
+        </div>
+
+        <div class="element" data-symbol="FI">
+            <div class="number">114</div>
+            <div class="symbol">FI</div>
+        </div>
+        <div class="element" data-symbol="Mc">
+            <div class="number">115</div>
+            <div class="symbol">Mc</div>
+        </div>
+        <div class="element" data-symbol="Lv">
+            <div class="number">116</div>
+            <div class="symbol">Lv</div>
+        </div>
+
+        <div class="element" data-symbol="Ts">
+            <div class="number">117</div>
+            <div class="symbol">Ts</div>
+        </div>
+        <div class="element" data-symbol="Og">
+            <div class="number">118</div>
+            <div class="symbol">Og</div>
+        </div>
+
+        <div class="empty-row" style="grid-column: span 18;"></div> <!-- Spacer Row -->
+
+        <!-- Lanthanides and Actinides -->
+
+        <div class="empty-cell" style="grid-column: span 2;"></div>
+
+        <div class="element lanth" data-symbol="Ce">
+            <div class="number">58</div>
+            <div class="symbol">Ce</div>
+        </div>
+        <div class="element" data-symbol="Pr">
+            <div class="number">59</div>
+            <div class="symbol">Pr</div>
+        </div>
+
+        <div class="element" data-symbol="Nd">
+            <div class="number">60</div>
+            <div class="symbol">Nd</div>
+        </div>
+        <div class="element" data-symbol="Pm">
+            <div class="number">61</div>
+            <div class="symbol">Pm</div>
+        </div>
+
+        <div class="element" data-symbol="Sm">
+            <div class="number">62</div>
+            <div class="symbol">Sm</div>
+        </div>
+
+        <div class="element" data-symbol="Eu">
+            <div class="number">63</div>
+            <div class="symbol">Eu</div>
+        </div>
+
+        <div class="element" data-symbol="Gd">
+            <div class="number">64</div>
+            <div class="symbol">Gd</div>
+        </div>
+        <div class="element" data-symbol="Tb">
+            <div class="number">65</div>
+            <div class="symbol">Tb</div>
+        </div>
+
+        <div class="element" data-symbol="Dy">
+            <div class="number">66</div>
+            <div class="symbol">Dy</div>
+        </div>
+
+        <div class="element" data-symbol="Ho">
+            <div class="number">67</div>
+            <div class="symbol">Ho</div>
+        </div>
+
+        <div class="element" data-symbol="Er">
+            <div class="number">68</div>
+            <div class="symbol">Er</div>
+        </div>
+        <div class="element" data-symbol="Tm">
+            <div class="number">69</div>
+            <div class="symbol">Tm</div>
+        </div>
+
+        <div class="element" data-symbol="Yb">
+            <div class="number">70</div>
+            <div class="symbol">Yb</div>
+        </div>
+
+        <div class="element" data-symbol="Lu">
+            <div class="number">71</div>
+            <div class="symbol">Lu</div>
+        </div>
+
+        <!-- Actinides (elements 90-103) -->
+
+        <div class="empty-cell" style="grid-column: 2;"></div>
+
+        <div class="element actin" data-symbol="Th">
+            <div class="number">90</div>
+            <div class="symbol">Th</div>
+        </div>
+
+        <div class="element" data-symbol="Pa">
+            <div class="number">91</div>
+            <div class="symbol">Pa</div>
+        </div>
+
+        <div class="element" data-symbol="U">
+            <div class="number">92</div>
+            <div class="symbol">U</div>
+        </div>
+
+        <div class="element" data-symbol="Np">
+            <div class="number">93</div>
+            <div class="symbol">Np</div>
+        </div>
+
+        <div class="element" data-symbol="Pu">
+            <div class="number">94</div>
+            <div class="symbol">Pu</div>
+        </div>
+
+        <div class="element" data-symbol="Am">
+            <div class="number">95</div>
+            <div class="symbol">Am</div>
+        </div>
+
+        <div class="element" data-symbol="Cm">
+            <div class="number">96</div>
+            <div class="symbol">Cm</div>
+        </div>
+        <div class="element" data-symbol="Bk">
+            <div class="number">97</div>
+            <div class="symbol">Bk</div>
+        </div>
+
+        <div class="element" data-symbol="Cf">
+            <div class="number">98</div>
+            <div class="symbol">Cf</div>
+        </div>
+
+        <div class="element" data-symbol="Es">
+            <div class="number">99</div>
+            <div class="symbol">Es</div>
+        </div>
+
+        <div class="element" data-symbol="Fm">
+            <div class="number">100</div>
+            <div class="symbol">Fm</div>
+        </div>
+
+        <div class="element" data-symbol="Md">
+            <div class="number">101</div>
+            <div class="symbol">Md</div>
+        </div>
+
+        <div class="element" data-symbol="No">
+            <div class="number">102</div>
+            <div class="symbol">No</div>
+        </div>
+
+        <div class="element" data-symbol="Lr">
+            <div class="number">103</div>
+            <div class="symbol">Lr</div>
+        </div>
+    </div>
+    </div>  
+</body>
+</html>
