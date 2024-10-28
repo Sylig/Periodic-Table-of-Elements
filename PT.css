@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7e7e7e;
+  margin: 0;
+  min-width: 1200px;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.table-title {
+  font-size: 2em;
+  font-weight: 600;
+  color: #edd3ff;
+  margin-top: 30px;
+  margin-bottom: 30px; /* Space between title and table */
+}
+
+.periodic-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 18, 1fr);
+
+  grid-gap: 7px;
+  justify-content: center; /* Centers table horizontally */
+  align-items: center; /* Centers table items */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Styling for individual elements */
+
+.element {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d1c4e9;
+  border-radius: 8px;
+  padding: 8px;
+  color: #ffffff;
+  transition: background-color 0.3s;
+  width: 70px;
+  height: 70px;
+  font-size: 1.2em;
+}
+
+.empty-cell {
+  background: transparent;
+}
+
+.number {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-weight: bold;
+  font-size: 0.65em;
+  color: #deccff;
+}
+
+.symbol {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* Special styling for lanthanides and actinides */
+
+.lanth {
+  padding-top: 5;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1200px) {
+  .element {
+    width: 60px;
+    height: 60px;
+    font-size: 1em;
+  }
+
+  .periodic-table {
+    grid-gap: 6px;
+  }
+}
+
+@media (max-width: 900px) {
+  .element {
+    width: 50px;
+    height: 50px;
+    font-size: 0.9em;
+  }
+  .periodic-table {
+    grid-gap: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .element {
+    width: 40px;
+    height: 40px;
+    font-size: 0.8em;
+  }
+  .periodic-table {
+    grid-gap: 3px;
+  }
+}
+
+@media (max-width: 400px) {
+  .element {
+    width: 35px;
+    height: 35px;
+    font-size: 0.7em;
+  }
+  .periodic-table {
+    grid-gap: 2px;
+  }
+}
+
+.empty-row {
+  background: transparent;
+  height: 20px;
+  grid-column: span 18;
+}
+
+/* Adjust individual elements' styles */
+
+/* Alkali Metals */
+.element[data-symbol="Li"],
+.element[data-symbol="Na"],
+.element[data-symbol="K"],
+.element[data-symbol="Rb"],
+.element[data-symbol="Fr"],
+.element[data-symbol="Cs"] {
+  background-color: hsl(213, 36%, 32%, 0.8);
+}
+
+/* Alkaline Earth Metals */
+.element[data-symbol="Be"],
+.element[data-symbol="Mg"],
+.element[data-symbol="Ca"],
+.element[data-symbol="Sr"],
+.element[data-symbol="Ba"],
+.element[data-symbol="Ra"] {
+  background-color: hsl(276, 16%, 41%, 0.8);
+}
+
+/* Transition Metals */
+.element[data-symbol="Sc"],
+.element[data-symbol="Ti"],
+.element[data-symbol="V"],
+.element[data-symbol="Cr"],
+.element[data-symbol="Mn"],
+.element[data-symbol="Fe"],
+.element[data-symbol="Co"],
+.element[data-symbol="Ni"],
+.element[data-symbol="Cu"],
+.element[data-symbol="Zn"],
+.element[data-symbol="Y"],
+.element[data-symbol="Zr"],
+.element[data-symbol="Nb"],
+.element[data-symbol="Mo"],
+.element[data-symbol="Tc"],
+.element[data-symbol="Ru"],
+.element[data-symbol="Rh"],
+.element[data-symbol="Pd"],
+.element[data-symbol="Ag"],
+.element[data-symbol="Cd"],
+.element[data-symbol="Hf"],
+.element[data-symbol="Ta"],
+.element[data-symbol="W"],
+.element[data-symbol="Re"],
+.element[data-symbol="Os"],
+.element[data-symbol="Ir"],
+.element[data-symbol="Pt"],
+.element[data-symbol="Au"],
+.element[data-symbol="Hg"],
+.element[data-symbol="Rf"],
+.element[data-symbol="Db"],
+.element[data-symbol="Sg"],
+.element[data-symbol="Bh"],
+.element[data-symbol="Hs"] {
+  background-color: hsl(330, 21%, 47%, 0.8);
+}
+
+.element[data-symbol="Mt"],
+.element[data-symbol="Ds"],
+.element[data-symbol="Rg"],
+.element[data-symbol="Cn"],
+.element[data-symbol="Nh"],
+.element[data-symbol="FI"],
+.element[data-symbol="Mc"],
+.element[data-symbol="Lv"],
+.element[data-symbol="Ts"],
+.element[data-symbol="Og"] {
+  background-color: hsl(347, 35%, 55%, 0.8);
+}
+
+/* Post-transition Metals */
+.element[data-symbol="Al"],
+.element[data-symbol="Ga"],
+.element[data-symbol="In"],
+.element[data-symbol="Sn"],
+.element[data-symbol="Tl"],
+.element[data-symbol="Pb"],
+.element[data-symbol="Bi"],
+.element[data-symbol="Fl"],
+.element[data-symbol="At"],
+.element[data-symbol="TI"],
+.element[data-symbol="Po"] {
+  background-color: hsl(358, 70%, 66%, 0.8);
+}
+
+/* Metalloids */
+.element[data-symbol="B"],
+.element[data-symbol="Si"],
+.element[data-symbol="Ge"],
+.element[data-symbol="As"],
+.element[data-symbol="Sb"],
+.element[data-symbol="Te"] {
+  background-color: hsl(3, 70%, 68%, 0.8);
+}
+
+/* Non-metals */
+.element[data-symbol="H"],
+.element[data-symbol="C"],
+.element[data-symbol="N"],
+.element[data-symbol="O"],
+.element[data-symbol="P"],
+.element[data-symbol="S"],
+.element[data-symbol="Se"],
+.element[data-symbol="F"],
+.element[data-symbol="Cl"],
+.element[data-symbol="Br"],
+.element[data-symbol="I"] {
+  background-color: hsl(8, 70%, 70%, 0.8);
+}
+
+/* Noble Gases */
+.element[data-symbol="He"],
+.element[data-symbol="Ne"],
+.element[data-symbol="Ar"],
+.element[data-symbol="Kr"],
+.element[data-symbol="Xe"],
+.element[data-symbol="Rn"] {
+  background-color: hsl(21, 69%, 73%, 0.8);
+}
+
+/* Lanthanides */
+.element[data-symbol="La"],
+.element[data-symbol="Ce"],
+.element[data-symbol="Pr"],
+.element[data-symbol="Nd"],
+.element[data-symbol="Pm"],
+.element[data-symbol="Sm"],
+.element[data-symbol="Eu"],
+.element[data-symbol="Gd"],
+.element[data-symbol="Tb"],
+.element[data-symbol="Dy"],
+.element[data-symbol="Ho"],
+.element[data-symbol="Er"],
+.element[data-symbol="Tm"],
+.element[data-symbol="Yb"],
+.element[data-symbol="Lu"] {
+  background-color: hsl(21, 70%, 78%, 0.8);
+}
+
+/* Actinides */
+.element[data-symbol="Ac"],
+.element[data-symbol="Th"],
+.element[data-symbol="Pa"],
+.element[data-symbol="U"],
+.element[data-symbol="Np"],
+.element[data-symbol="Pu"],
+.element[data-symbol="Am"],
+.element[data-symbol="Cm"],
+.element[data-symbol="Bk"],
+.element[data-symbol="Cf"],
+.element[data-symbol="Es"],
+.element[data-symbol="Fm"],
+.element[data-symbol="Md"],
+.element[data-symbol="No"],
+.element[data-symbol="Lr"],
+.element[data-symbol="Cf"] {
+  background-color: hsl(213, 36%, 25%, 0.8);
+}
+
+/* Hover effect */
+.element:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
